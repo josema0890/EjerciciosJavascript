@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Condiciones - Ejercicio 3</title>
+	</head>
+		<body>
+			<table>
+				<tr>
+					<td>Nota</td>
+				</tr>
+				<tr>
+					<td><input type="text" id="nota"> </td>
+				</tr>
+			</table>
+			<button onclick="comprobarNota()">Comprobar nota</button>
+			<hr>
+			<p id="mensaje"></p>
+			
+			<script>
+	/*Defino la variable nota con un valor por defecto a 0 */
+			var nota = 0;
+			var mensaje = "";
+				
+	/*Creo la función comprobar nota para que al pulsar el botón, compruebe el valor que se está introduciendo en el campo con id nota*/			
+				function comprobarNota() {
+	//Cuando pulso el botón, recupero los valores introducidos en el campo nota.
+					nota = document.getElementById("nota").value;
+	//Muestro los valores en consola para debug.
+					console.log("Valor de nota en comprobar nota: " + nota);
+	//Compruebo los valores de nota para mostrar un mensaje acorde a la nota introducida.
+					switch (nota) {
+						case "0": 
+						case "1":
+						case "2": 
+						case "3":	
+						case "4":
+							mensaje = "Suspendido";
+							break;
+						case "5":
+							mensaje = "Suficiente";
+							break;
+						case "6":
+							mensaje = "Bien";
+							break;
+						case "7":
+						case "8":
+							mensaje = "Notable";
+							break;
+						case "9":
+							mensaje = "Sobresaliente";
+							break;
+						case "10":
+						case "mh":
+						case "MH":
+							mensaje = "Matricula de honor";
+							break;
+						default:
+							mensaje = "El valor introducido en el campo nota no es valido";
+					}
+					console.log("Valor de nota despues de switch: " + nota);
+					alerta();
+				}
+				
+				function alerta() {
+					alert(mensaje);
+				}
+			</script>
+		</body>
+	</html>

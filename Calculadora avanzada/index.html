@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+<!-- Indicar ruta donde está el css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<!-- Añadir fuente roboto desde google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- Indicar ruta donde está el js de la calculadora -->
+	<script src="assets/js/calculadora.js"></script>
+</head>
+<body>
+<!-- Creo un div principal, donde irá la calculadora en el grid -->
+	<div id="principal">
+		<form>
+			<div id="calculadora">
+				<div class="pantalla">
+					<div class="historial" id="historial">0</div>
+					<div class="resultado" id="resultado">0</div>
+				</div>
+				<div class="boton7">
+						<input class="gris boton" type="button" value="7" onclick="numero7()">
+				</div>
+				<div class="boton8">
+					<input class="gris boton" type="button" value="8">
+				</div>
+				<div class="boton9">
+					<input class="gris boton" type="button" value="9">
+				</div>
+				<div class="resta">
+					<input class="gris boton" type="button" value="-">
+				</div>
+				<div class="division">
+					<input class="gris boton" type="button" value="/">
+				</div>
+				<div class="boton4">
+					<input class="gris boton" type="button" value="4">
+				</div>
+				<div class="boton5">
+					<input class="gris boton" type="button" value="5">
+				</div>
+				<div class="boton6">
+					<input class="gris boton" type="button" value="6">
+				</div>
+				<div class="suma">
+					<input class="gris boton" type="button" value="+">
+				</div>
+				<div class="multiplicar">
+					<input class="gris boton" type="button" value="*">
+				</div>
+				<div class="boton1">
+					<input class="gris boton" type="button" value="1">
+				</div>
+				<div class="boton2">
+					<input class="gris boton" type="button" value="2">
+				</div>
+				<div class="boton3">
+					<input class="gris boton" type="button" value="3">
+				</div>
+				<div class="igual">
+					<input class="granate boton" type="button" value="=">
+				</div>
+				<div class="raizcuadrada">
+					<input class="gris boton" type="button" value="√">
+				</div>
+				<div class="boton0">
+					<input class="gris boton" type="button" value="0">
+				</div>
+				<div class="limpiar">
+					<input class="gris boton" type="button" value="C">
+				</div>
+				<div class="decimal">
+					<input class="gris boton" type="button" value=".">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

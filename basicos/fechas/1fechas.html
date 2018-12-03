@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fechas - Ejercicio 1</title>
+    </head>
+    <body>
+		<p>Creo la variable fecha y le asigno valor mediante el metodo Date()</p>
+      	<pre>var fecha = new Date();</pre>
+       	<p>Una vez la variable fecha tiene una fecha, creo un array con los dias de la semana, siendo Domingo 0 y Sabado 6</p>
+		<pre>var diafecha = new Array(7);
+	diafecha[0] = "Domingo";
+	diafecha[1] = "Lunes";
+	diafecha[2] = "Martes";
+	diafecha[3] = "Miercoles";
+	diafecha[4] = "Jueves";
+	diafecha[5] = "Viernes";
+	diafecha[6] = "Sabado";</pre>
+       	<p>Cuando tengo este array creado, creo la variable diasemana, y le digo que para el array, obtenga el dia de la fecha y lo sustituya por el valor dado anteriormente.</p>
+       	<pre>var diasemana = diafecha[fecha.getDay()];</pre>
+       	<p>Después obtengo el parrafo diasemana, y le digo que me muestre el valor.</p>
+       	<pre>document.getElementById("diasemana") .innerHTML = diasemana;</pre>
+        <hr>
+        <p id="diasemana"></p>
+        
+        <script>
+//Declaro la variable fecha y obtengo el valor mediante el metodo Date().
+            var fecha = new Date();
+/*Declaro la variable diasemana y creo un array para cambiar el número que devuelve la función anterior
+por un día de la semana, siendo 0 domingo y 7 sabado.*/
+			var diafecha = new Array(7);
+				diafecha[0] = "Domingo";
+				diafecha[1] = "Lunes";
+				diafecha[2] = "Martes";
+				diafecha[3] = "Miercoles";
+				diafecha[4] = "Jueves";
+				diafecha[5] = "Viernes";
+				diafecha[6] = "Sabado";
+//Declaro la variable diasemana, y le digo que del array diafecha, muestre el valor recogido por fecha.getDay().
+			var diasemana = diafecha[fecha.getDay()];
+//Obtengo el parrafo con id diasemana, y le digo que muestre el valor de diasemana.
+            document.getElementById("diasemana") .innerHTML = diasemana;
+        </script>
+    </body>
+</html>

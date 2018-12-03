@@ -1,0 +1,53 @@
+respuestas a ejercicios javascript.
+
+BÁSICO
+
+1 - Introducción
+
+	1.1 Documento que muestre mensaje hola mundo. V
+	1.2 Hacer lo mismo pero con una función dentro de <head></head> V
+	1.3 Hacer lo mismo pero con el código javascript fuera del documento html V
+	1.4 Mostrar un mensaje "hola mundo" en una ventana emergente X
+	1.5 Mostrar un mensaje "hola mundo" en la consola del navegador V
+
+2 - Variables
+
+	2.1 Realizar un programa con dos variables "nombre" y "apellidos" y los muestre juntos. V
+	2.2 Crear un documento html con un comentario en una línea y otro que sea de varias líneas V
+	2.3 Realizar un programa que nos muestre la suma de tres variables V
+
+3 - Funciones
+
+	3.1 Crear una función que nos muestre la potencia de dos números V
+		#org3ea71b7
+	3.2 Crear una función que transforme grados Fahrenheit a Celsius y nos lo muestre V
+
+4 - Cadenas de Texto
+
+	4.1 Hacer un programa que sustituya una cadena "Yo amo a mi perro" por "Yo amo a mi gato" V
+		htmldejavascript#orgcbba812
+	4.2 Hacer un programa que ponga en mayúsculas la frase "Emacs es el mejor programa del mundo" V
+		htmldejavascript#orgd1cd5b0
+
+5 - Fechas
+
+	5.1 Hacer un programa que nos muestre el dia de la semana en el que estamos V
+		htmldejavascript#org5b48fe5
+		
+6 - Arrays
+
+	6.1 Hacer un programa que nos muestre los meses enero, agosto y noviembre  de todos los meses del año. V
+	6.2 Crear un array con tres días de la semana y añadirle posteriormente los días faltantes y que los muestre todos V
+	6.3 Crear un array de frutas y ordenarlas por orden alfabético V
+
+7 - Condicionales
+
+	7.1 Crear un programa donde podamos introducir una hora y comprobandola con las 12 del mediodía nos indique si son buenos días o buenas tardes. V 
+	7.2 Hacer un programa que nos diga el día de la semana en el que nos encontramos V
+	7.3 Hacer un programa en el que podamos introducir una nota y según ésta nos diga si está aprobado o no. V
+	7.4 Hacer un programa similar al anterior pero que además nos diga si está suspendo, aprobado, notable, sobresaliente o matrícula de honor. V
+	7.5 Hacer un programa que nos muestre todos los días de la semana.
+	7.6 Hacer un programa que nos muestre los 100 primeros números.
+
+
+

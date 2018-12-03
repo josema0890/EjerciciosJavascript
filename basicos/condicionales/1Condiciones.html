@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Condiciones - Ejercicio 1</title>
+	</head>
+		<body>
+			<table>
+				<tr>
+					<td>Horas</td>
+					<td></td>
+					<td>Minutos</td>
+				</tr>
+				<tr>
+					<td><input type="text" max="2" id="hora"> </td>
+					<td>:</td>
+					<td><input type="number" max="59" id="minutos"></td>
+				</tr>
+			</table>
+			<button onclick="comprobarhora()">comprobar hora</button>
+			<hr>
+			<p id="mensaje"></p>
+			
+			<script>
+	/*Defino la variable horas con un valor por defecto a 00 */
+			var horas = 00;
+			var minutos = 00;
+	/*Creo la función comprobar hora para que al pulsar el botón, compruebe el valor que se está introduciendo en el campo con id hora*/			
+				function comprobarhora() {
+	//Cuando pulso el botón, recupero los valores introducidos en los campos horas y minutos.
+					horas = document.getElementById("hora").value;
+					minutos = document.getElementById("minutos").value;
+	//Muestro los valores en consola para debug.
+					console.log("Valor de hora en comprobar hora: " + horas);
+	//Compruebo los valores de hora para mostrar un mensaje acorde a la hora que se introduce.
+					switch (horas) {
+						case "00": 
+						case "01": case "1":
+						case "02": case "2": 
+						case "03": case "3":	
+						case "04": case "4":
+						case "05": case "5":
+							mensaje = "Buenas noches";
+							break;
+						case "06": case "6":
+						case "07": case "7":
+						case "08": case "8":
+						case "09": case "9":
+						case "10":
+						case "11":
+						case "12":
+							mensaje = "Buenos días";
+							break;
+						case "13": case "14": case "15": case "16":
+						case "17": case "18": case "19":
+							mensaje = "Buenas tardes";
+							break;
+						case "20": case "21": case "22": case "23":
+							mensaje = "Buenas noches";
+							break;
+						default:
+							mensaje = "La hora no es valida";
+					}
+					console.log("Valor de horas despues de switch: " + horas);
+					document.getElementById("mensaje") .innerHTML = mensaje;
+				}
+			</script>
+		</body>
+	</html>

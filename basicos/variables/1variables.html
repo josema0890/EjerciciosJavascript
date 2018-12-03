@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variables - Ejercicio 1</title>
+    </head>
+    <body>
+		<p>Se han declarado dos variables, nombre y apellidos con los siguientes valores.</p>
+        <p>Nombre: Jose Manuel</p>
+        <p>Apellidos: Galvañ Castellano</p>
+        <hr>
+        <p id="variable"></p>
+        
+        <script>
+//Declaro la variable nombre, y le asigno un valor
+            var nombre = "Jose Manuel";
+//Declaro la variable apellidos, y le asigno un valor
+			var apellidos = "Galvañ Castellano";
+//Declaro la variable nombreApellidos y le doy el valor de nombre y apellidos
+            var nombreApellidos = nombre + " " + apellidos
+//Obtengo el parrafo con id variable, y le digo que añada el valor de la variable NombreApellidos
+            document.getElementById("variable") .innerHTML = nombreApellidos;
+        </script>
+    </body>
+</html>

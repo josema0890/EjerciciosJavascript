@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funciones - Ejercicio 2</title>
+    </head>
+    <body>
+		<p>Se declara la variable centigrados y se le asigna el valor de 22.</p>
+        <p>centigrados: 22</p>
+        <hr>
+        <p id="fahrenheit"></p>
+        
+        <script>
+//Declaro la variable celsius, y le asigno el valor 22.
+            var celsius = 22;
+//Calculo los grados fahrenheit con la siguiente formula (C * 9/5) + 32 = F
+			var fahrenheit = (celsius*9/5)+32;			
+//Obtengo el parrafo con id fahrenheit, y le digo que muestre el resultado de la conversion de Cº a Fº
+            document.getElementById("fahrenheit") .innerHTML = fahrenheit;
+        </script>
+    </body>
+</html>

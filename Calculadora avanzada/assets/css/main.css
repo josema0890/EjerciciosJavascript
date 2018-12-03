@@ -1,0 +1,174 @@
+/* Guia botones calculadora para grid:
+	pantalla = pantalla
+	btnX = botón y numero
+	btns = botón sumar
+	btnr = botón restar
+	btnm = botón multipilcar
+	btnd = botón dividir
+	btnv = botón raiz cuadrada
+	btnd = botón decimal
+	btni = botón resultado
+	btnc = botón limpiar
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: pantalla;
+	src: url(../fuentes/digital7.ttf);
+}
+
+#principal {
+	width: 25%;
+}
+
+.boton {
+	font-family: 'Roboto', sans-serif;
+	border-style: none;
+	text-align: center;
+	border-radius: 8px;
+	padding: 10px 10px;
+	width: 90%;
+	text-decoration: none;
+}
+
+.historial {
+	font-family: pantalla;
+	font-size: 25px;
+	border-radius: 8px 8px 0px 0px;
+	background-color: cadetblue;
+	text-align: right;
+	padding: 5px 5px 0px 0px;
+}
+
+.resultado {
+	font-family: pantalla;
+	font-size: 50px;
+	padding: 0px 5px;
+	text-align: right;
+	background-color: cadetblue;
+	border-radius: 0px 0px 8px 8px;
+}
+
+.gris {
+	background-color: grey;
+	color: white;	
+}
+
+.granate {
+	background-color: crimson;
+	color: white;
+	text-align: center;
+	height: 100%;
+}
+
+#calculadora{
+	display: grid;
+	grid-template-areas:
+		'pantalla pantalla pantalla pantalla pantalla'
+		'boton7 boton8 boton9 resta division'
+		'boton4 boton5 boton6 suma multiplicar'
+		'boton1 boton2 boton3 igual raizcuadrada'
+		'boton0 boton0 decimal igual limpiar';
+	background-color: darkslategrey;
+	padding: 10px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.pantalla {
+	grid-area: pantalla;
+	padding: 5px 0px;
+}
+
+.boton1 {
+	grid-area: boton1;
+	padding: 5px 0px;
+}
+
+.boton2 {
+	grid-area: boton2;
+	padding: 5px 0px;
+}
+
+.boton3 {
+	grid-area: boton3;
+	padding: 5px 0px;
+}
+
+.boton4 {
+	grid-area: boton4;
+	padding: 5px 0px;
+}
+
+.boton5 {
+	grid-area: boton5;
+	padding: 5px 0px;
+}
+
+.boton6 {
+	grid-area: boton6;
+	padding: 5px 0px;
+}
+
+.boton7 {
+	grid-area: boton7;
+	padding: 5px 0px;
+}
+
+.boton8 {
+	grid-area: boton8;
+	padding: 5px 0px;
+}
+
+.boton9 {
+	grid-area: boton9;
+	padding: 5px 0px;
+}
+
+.boton0 {
+	grid-area: boton0;
+	padding: 5px 0px;
+}
+
+.resta {
+	grid-area: resta;
+	padding: 5px 0px;
+}
+
+.division {
+	grid-area: division;
+	padding: 5px 0px;
+}
+
+.suma {
+	grid-area: suma;
+	padding: 5px 0px;
+}
+
+.multiplicar {
+	grid-area: multiplicar;
+	padding: 5px 0px;
+}
+
+.igual {
+	grid-area: igual;
+	padding: 5px 0px;
+}
+
+.raizcuadrada {
+	grid-area: raizcuadrada;
+	padding: 5px 0px;
+}
+
+.limpiar {
+	grid-area: limpiar;
+	padding: 5px 0px;
+}
+
+.decimal {
+	grid-area: decimal;
+	padding: 5px 0px;
+}

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadenas de Texto - Ejercicio 1</title>
+    </head>
+    <body>
+		<p>Creo la variable texto1 y le asigno el valor "Yo amo a mi perro."</p>
+        <p>Después, creo la variable texto 2 y mediante el comando replace() le digo que cambie perro por gato.</p>
+        <p>Una vez cambiado el resultado es el siguiente:</p>
+        <hr>
+        <p id="textocambiado"></p>
+        
+        <script>
+//Declaro la variable texto1, y le asigno la cadena de texto "Yo amo a mi perro."
+            var texto1 = "Yo amo a mi perro";
+//Utilizo el metodo replace() para cambiar el valor de "perro" a "gato".
+			var texto2 = texto1.replace("perro", "gato");
+//Obtengo el parrafo con id textocambiado, y le digo que muestre el valor de texto2
+            document.getElementById("textocambiado") .innerHTML = texto2;
+        </script>
+    </body>
+</html>

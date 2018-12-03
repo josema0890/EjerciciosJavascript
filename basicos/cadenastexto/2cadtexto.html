@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadenas de Texto - Ejercicio 2</title>
+    </head>
+    <body>
+		<p>Creo la variable textominus y le asigno el valor "Emacs es el mejor programa del mundo"</p>
+        <p>Después, creo la variable textomayus y mediante el comando toUpperCase() le digo que convierta todo a mayúsculas.</p>
+        <p>Una vez cambiado el resultado es el siguiente:</p>
+        <hr>
+        <p id="textomayus"></p>
+        
+        <script>
+//Declaro la variable textominus, y le asigno la cadena de texto "Emacs es el mejor programa del mundo."
+            var textominus = "Emacs es el mejor programa del mundo";
+/*Declaro la variable textomayus y utilizo el metodo nombrevariable.toUpperCase()
+para convertir todas las letras a mayúsculas.*/
+			var textomayus = textominus.toUpperCase();
+//Obtengo el parrafo con id textomayus, y le digo que muestre el valor de la variable textomayus.
+            document.getElementById("textomayus") .innerHTML = textomayus;
+        </script>
+    </body>
+</html>

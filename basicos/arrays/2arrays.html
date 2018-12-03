@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arrays - Ejercicio 2</title>
+	</head>
+		<body>
+			<p>Creo un array con tres dias de la semana, siendo Lunes 0, Miercoles 2 y Viernes 4.</p>
+			<pre>var diasemana = new Array(7);	
+	var diasemana = ["Lunes", "Martes", "Miercoles"];
+		</pre>
+			<p>Cuando tengo este array creado, añado los dias que faltan mediante push() al apretar el boton de abajo.</p>
+			<pre>
+function anadirDia() {
+	diasemana.push("Jueves", "Viernes","Sabado","Domingo");
+	document.getElementById("diasemana").innerHTML = diasemana;
+	}
+			</pre>
+			<button onclick="anadirDia()">Añadir días</button>
+			<hr>
+			<p id="diasemana"></p>
+			<script>
+	/*Creo un array con los meses del año, Lunes 0, Miercoles 2 y Viernes 4*/
+				var diasemana = ["Lunes", "Martes", "Miercoles"];
+
+				document.getElementById("diasemana").innerHTML = diasemana;
+				
+	/*Defino un loop para ir añadiendo los dias de la semana al elemento seleccionado*/
+				
+				function anadirDia() {
+					diasemana.push("Jueves", "Viernes","Sabado","Domingo");
+					document.getElementById("diasemana").innerHTML = diasemana;
+				}
+				
+			</script>
+		</body>
+	</html>

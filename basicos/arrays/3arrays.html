@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arrays - Ejercicio 2</title>
+	</head>
+		<body>
+			<p>Creo un array con varias frutas desordenadas.</p>
+			<pre>var frutas = ["Melones", "Kiwis", "Mandarinas", "Melocotones", "Aguacates", "Fresas", "Tomates", "Yinyoles"];
+		</pre>
+			<p>Una vez tengo este array creado, cuando se pulse el botón, ordenaré las frutas mediante la orden sort() y se llamará a la función quitarboton() para eliminar tanto el texto como el botón.</p>
+			<pre>
+function ordenarFrutas() {
+	document.getElementById("frutas").innerHTML = frutas.sort();
+	quitarboton();
+}
+			</pre>
+			<pre>
+function quitarboton() {
+	var elem = document.getElementById("boton");
+	var text = document.getElementById("texto");
+	elem.parentNode.removeChild(elem);
+	text.parentNode.removeChild(text);
+}	
+			</pre>
+			<button id="boton" onclick="ordenarFrutas()">Ordenador de frutas 9000</button>
+			<p id="texto">Si pulsa el botón, este mensaje y el botón se autodestruirán al ordenar las frutas.</p>
+			<hr>
+			<p id="frutas"></p>
+			<script>
+	/*Creo un array con el inventario de la tienda*/
+				var frutas = [" Melones", " Kiwis", " Mandarinas", " Melocotones", " Aguacates", " Fresas", " Tomates", " Jinjoles", " Limonicos del campo de Murcia"];
+
+				document.getElementById("frutas").innerHTML = frutas;
+				
+	/*Defino un loop para ir añadiendo los dias de la semana al elemento seleccionado*/
+				
+				function ordenarFrutas() {
+					document.getElementById("frutas").innerHTML = frutas.sort();
+					quitarboton();
+				}
+				
+				function quitarboton() {
+					var elem = document.getElementById("boton");
+					var text = document.getElementById("texto");
+					elem.parentNode.removeChild(elem);
+					text.parentNode.removeChild(text);
+				}
+				
+			</script>
+		</body>
+	</html>

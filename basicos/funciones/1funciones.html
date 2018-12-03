@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funciones - Ejercicio 1</title>
+    </head>
+    <body>
+		<p>Se han declarado dos variables, las cuales se van a obtener su potencia.</p>
+        <p>numero1: 5</p>
+        <p>numero2: 9</p>
+        <hr>
+        <p id="potencia1"></p>
+        <p id="potencia2"></p>
+        
+        <script>
+//Declaro la variable numero1, y le asigno el valor 5.
+            var numero1 = 5;
+//Declaro la variable numero2, y le asigno el valor 9.
+			var numero2 = 9;
+/*Declaro la variable potencia1, mediante la sentencia Math.pow(numero,potencia) calculo la potencia 
+de la variable numero1.*/
+			var potencia1 = Math.pow(numero1, 2);
+/*Declaro la variable potencia1, mediante la sentencia Math.pow(numero,potencia) calculo la potencia 
+de la variable numero2.*/
+            var potencia2 = Math.pow(numero2, 2);
+//Obtengo el parrafo con id potencia1, y le digo que muestre el resultado de la potencia del primer numero.
+            document.getElementById("potencia1") .innerHTML = potencia1;
+//Obtengo el parrafo con id potencia2, y le digo que muestre el resultado de la potencia del segundo numero.
+            document.getElementById("potencia2") .innerHTML = potencia2;
+        </script>
+    </body>
+</html>

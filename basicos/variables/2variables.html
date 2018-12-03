@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variables - Ejercicio 2</title>
+    </head>
+    <body>
+		<p>Se han declarado dos variables, nombre y apellidos con los siguientes valores.</p>
+        <p>Nombre: Jose Manuel</p>
+        <p>Apellidos: Galvañ Castellano</p>
+        <hr>
+        <p id="variable"></p>
+        
+        <script>
+//Declaro la variable nombre, y le asigno un valor
+            var nombre = "Jose Manuel";
+//Declaro la variable apellidos, y le asigno un valor
+			var apellidos = "Galvañ Castellano";
+/*Declaro la variable nombreApellidos.
+	-como primer valor añado el valor de la variable nombre
+	-después añado un espacio al final de la variable nombre con un " ".
+	-y por último, añado el valor de la variable apellidos */
+            var nombreApellidos = nombre + " " + apellidos
+//Obtengo el parrafo con id variable, y le digo que añada el valor de la variable NombreApellidos
+            document.getElementById("variable") .innerHTML = nombreApellidos;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variables - Ejercicio 3</title>
+    </head>
+    <body>
+		<p>Se han declarado tres variables, las cuales se van a sumar sus valores.</p>
+        <p>numero1: 10</p>
+        <p>numero2: 5</p>
+        <p>numero3: 84</p>
+        <hr>
+        <p id="suma"></p>
+        
+        <script>
+//Declaro la variable numero1, y le asigno el valor 10.
+            var numero1 = 10;
+//Declaro la variable numero2, y le asigno el valor 5.
+			var numero2 = 5;
+//Declaro la variable numero3, y le asigno el valor 84.
+			var numero3 = 84;
+//Declaro la variable resultado, y le sumo los valores de las 3 variables anteriores.
+            var resultado = numero1 + numero2 +numero3
+//Obtengo el parrafo con id suma, y le digo que muestre el resultado de la suma de las tres variables
+            document.getElementById("suma") .innerHTML = resultado;
+        </script>
+    </body>
+</html>
